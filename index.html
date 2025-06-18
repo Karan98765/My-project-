@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="new.css">
+  <title>Crunchy Pizza</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%;
+      background: rgba(0,0,0,0.8); display: flex; justify-content: flex-end;
+      gap: 2rem; padding: 1rem; z-index: 1000;
+    }
+    nav a { color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: bold; }
+    .hero {
+      background: url('Pizza-3007395.jpg') center/cover no-repeat;
+      height: 100vh; color: #fff; text-align: center; position: relative;
+    }
+    .hero-content {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    .hero-content h1 { font-size: 4rem; font-weight: lighter; }
+    .hero-content h2 { font-size: 5rem; font-weight: bold; }
+    .hero-content button {
+      margin-top: 1rem; padding: 0.75rem 2rem; font-size: 1.2rem;
+      background: #000; color: #fff; border: none; cursor: pointer;
+    }
+    .open-time {
+      position: absolute; bottom: 10px; left: 10px;
+      background: #000; color: #fff; padding: 0.5rem 1rem; font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero" id="home">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#menu">MENU</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="hero-content">
+      <h1>The</h1>
+      <h2>Crunchy Pizza</h2>
+      <button onclick="document.getElementById('menu').scrollIntoView()">See Menu</button>
+    </div>
+    <div class="open-time">Open: 8am - 10pm</div>
+  </div>
+
+  <section id="menu">
+    <h1>The Menu</h1>
+    <div class="menu-item"><h3>Margherita <span>$14</span></h3><p>Fresh tomatoes, mozzarella, basil</p></div>
+    <div class="menu-item"><h3>Formaggio <span>$13.50</span></h3><p>Four cheeses</p></div>
+    <div class="menu-item"><h3>Chicken <span>$15</span></h3><p>Tomatoes, mozzarella, chicken, onions</p></div>
+    <div class="menu-item"><h3>Pineapple'o'clock <span>$15</span></h3><p>Tomatoes, mozzarella, pineapple, bacon, basil</p></div>
+    <div class="menu-item"><h3>Meat Town Hot! <span>$15</span></h3><p>Tomatoes, mozzarella, pepperoni, sausage, beef, chicken</p></div>
+    <div class="menu-item"><h3>Parma New <span>$15</span></h3><p>Tomatoes, mozzarella, parma, bacon, arugula</p></div>
+  </section>
+
+  <section id="about">
+    <h1>About</h1>
+    <p>Welcome to The Crunchy Pizza — delicious, fresh, cozy and inviting. Great taste & warm hospitality, every time.</p>
+    <p><strong>Chef:</strong> Mr. Aditya himself</p>
+    <p>We love our interiors.</p>
+    <img src="chef.jpg" alt="Chef">
+    <img src="restaurant.jpeg" alt="Interior">
+  </section>
+
+  <section>
+    <h1>Opening Hours</h1>
+    <p>Mon - Sat: 8am - 10pm</p>
+    <p>Sunday: Closed</p>
+  </section>
+
+  <img src="map.jpg" alt="Map">
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>Find us at some address or call 09850515-122330</p>
+    <p><strong>FYI:</strong> We offer full-service catering for any event.</p>
+    <h2>Reserve a table or send us a message:</h2>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="text" placeholder="Couple/Family" required>
+      <input type="date" required>
+      <input type="text" placeholder="Message">
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+  </section>
+
+</body>
+</html>
